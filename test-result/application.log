@@ -1,0 +1,5 @@
+14 Dec 2011 18:12:16,687 INFO  ~ Starting E:\My Documents\playworkspace\helloworld
+14 Dec 2011 18:12:18,515 WARN  ~ You're running Play! in DEV mode
+14 Dec 2011 18:12:19,125 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+14 Dec 2011 18:12:37,234 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+14 Dec 2011 18:12:37,484 INFO  ~ Application 'Hello World' is now started !

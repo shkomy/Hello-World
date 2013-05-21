@@ -1,0 +1,43 @@
+.hdn {
+
+}
+
+.shw {
+display: block;
+height: 50px;
+width: 200px;
+background: #888;
+}
+
+.menu:hover ul {
+display: block;
+}
+
+.menu {
+position: relative;
+}
+
+ul 
+{
+margin: 0;
+position: absolute;
+
+display: none;
+width: 200px;
+background: #999;
+padding: 0;
+}
+
+ul li {
+height: auto;
+}
+
+.one {
+height: 50px;
+background: #0f0;
+}
+
+.two{
+height: 50px;
+background: #00f;
+}

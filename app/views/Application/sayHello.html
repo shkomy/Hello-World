@@ -1,0 +1,23 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+ 
+<h1>Hello ${myName ?: 'guest'}!</h1>
+ 
+<a href="@{Application.index()}">Back to form</a>
+
+	${task.title} 
+	<a class="createTask" href="#">like this</a>		
+	<span class="po" id="${task.id}">likes ${task.no}</span>
+
+
+<script type="text/javascript" charset="utf-8">
+	$('.createTask').click(function(){
+		$.post('@{createTask()}', {id: $('.po').attr('id')}, function(task){
+			$('.po').replaceWith('<span class="po" id="'+task.id+'">likes '+task.no+'</span>')
+		}, 'json')
+	})
+	
+	$('input').live('click', function(){
+		$.post('@{changeStatus()}', {id: $(this).attr('id'), done: $(this).val()})
+	})
+</script>
